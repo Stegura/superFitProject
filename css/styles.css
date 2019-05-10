@@ -177,6 +177,9 @@ p {
   border-width: 0 0 3vh 49vw;
   border-color: transparent transparent #EE91A3 transparent;
 }
+#home img {
+  max-height: 80vh;
+}
 #home .title {
   font-size: 88px;
   font-weight: bold;
