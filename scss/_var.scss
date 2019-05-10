@@ -11,6 +11,17 @@
 }
 
 @font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Bold.eot');
+    src: url('vTTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('vTTNorms-Bold.woff2') format('woff2'),
+        url('../fonts/TTNorms-Bold.woff') format('woff'),
+        url('../fonts/TTNorms-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Regular.eot');
     src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
@@ -32,5 +43,12 @@
 }
 
 //Font colors
-$titleColor : #EE105A;
 
+$titleColor : #EE105A;
+$lightFontColor: #F9FBFF;
+
+// social networks colors
+
+$viberColor: #59267C;
+$facebookColor: #3B5998;
+$instaColor: #405DE6;

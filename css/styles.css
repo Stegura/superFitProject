@@ -1,8 +1,73 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "TT Norms";
   src: url("../fonts/TTNorms-Medium.eot");
   src: url("../fonts/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Medium.woff2") format("woff2"), url("../fonts/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Bold.eot");
+  src: url("vTTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("vTTNorms-Bold.woff2") format("woff2"), url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 @font-face {
@@ -12,13 +77,112 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
+h1,
+h2,
+h3,
+h4 {
   font-family: "TT Norms";
 }
 
-h1 {
+p {
+  font-family: "Open Sans";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h1,
+h2 {
   color: #EE105A;
+}
+
+p {
+  font-size: 18px;
+}
+
+.wraper {
+  max-width: 1155px;
+  margin: 0 auto;
+}
+
+.flex-container-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container-col {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.text-block p {
+  text-align: center;
+  color: #F9FBFF;
+  font-size: 28px;
+}
+
+.social-nav-btn {
+  box-sizing: border-box;
+  font-size: 22px;
+  padding: 16px;
+}
+.social-nav-btn:hover {
+  background-color: #EE105A;
+}
+
+#fb-nav {
+  color: #3B5998;
+}
+
+#insta-nav {
+  color: #405DE6;
+}
+
+#viber-nav {
+  color: #59267C;
+}
+
+#main-menu ul {
+  flex-basis: 50%;
+}
+
+#home {
+  background: linear-gradient(to right, #000001, #5C0609);
+  height: 103vh;
+  position: relative;
+}
+#home:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 3vh 0 0 49vw;
+  border-color: transparent transparent transparent #EE91A3;
+}
+#home:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 3vh 49vw;
+  border-color: transparent transparent #EE91A3 transparent;
+}
+#home .title {
   font-size: 88px;
+  font-weight: bold;
+}
+#home .title span {
+  color: #F9FBFF;
 }
 
 /*# sourceMappingURL=styles.css.map */

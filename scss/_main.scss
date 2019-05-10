@@ -1,8 +1,116 @@
-body {
+// main styles
+
+h1, 
+h2,
+h3,
+h4 {
     @extend %primaryFont;
+    text-align: center;
 }
 
-h1 {
+h1,
+h2 {
     color: $titleColor;
-    font-size: 88px;
+}
+
+p {
+    @extend %secondaryFont;
+    font-size: 18px;
+}
+
+.wraper {
+    max-width: 1155px;
+    margin: 0 auto;
+}
+
+.flex-container-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container-col {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.text-block {
+    p {
+        text-align: center;
+        color: $lightFontColor;
+        font-size: 28px;
+    }
+}
+
+// navbar styles
+.social-nav {
+
+    &-btn {
+        box-sizing: border-box;
+        font-size: 22px;
+        padding: 16px;
+
+        &:hover {
+            background-color: $titleColor;
+        }
+    }
+}
+ 
+#fb-nav {
+    color: $facebookColor;
+}
+
+#insta-nav {
+    color: $instaColor;
+
+}
+
+#viber-nav {
+    color: $viberColor;
+}
+
+#main-menu {
+    ul {
+        flex-basis: 50%;
+    }
+}
+
+// header section styles
+
+#home {
+    background: linear-gradient(to right,#000001, #5C0609);
+    height: 103vh;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3vh 0 0 49vw;
+        border-color: transparent transparent transparent #EE91A3;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 3vh 49vw;
+        border-color: transparent transparent #EE91A3 transparent;
+    }
+
+    .title {
+        font-size: 88px;
+        font-weight: bold;
+
+        span {
+            color: $lightFontColor;
+        }
+    }
 }
