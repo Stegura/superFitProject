@@ -1,0 +1,8 @@
+body {
+    @extend %primaryFont;
+}
+
+h1 {
+    color: $titleColor;
+    font-size: 88px;
+}
