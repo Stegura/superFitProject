@@ -77,6 +77,13 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.eot");
+  src: url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 h1,
 h2,
 h3,
@@ -84,7 +91,7 @@ h4 {
   font-family: "TT Norms";
 }
 
-p {
+#main-menu .main-menu-btn, p {
   font-family: "Open Sans";
 }
 
@@ -110,11 +117,13 @@ p {
 }
 
 .flex-container-row {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
 .flex-container-col {
+  align-items: center;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -123,16 +132,66 @@ p {
 .text-block p {
   text-align: center;
   color: #F9FBFF;
-  font-size: 28px;
+  font-size: 1.5em;
+}
+
+.nav-block {
+  align-items: stretch;
+  margin: 20px 0 20px 0;
 }
 
 .social-nav-btn {
   box-sizing: border-box;
-  font-size: 22px;
-  padding: 16px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 12px;
 }
 .social-nav-btn:hover {
+  border-color: unset;
+  box-shadow: 1.5px 1.5px 3px 0px #c8c8c8;
+  margin-top: -1px;
+  transition: 0.3s all;
+}
+.social-nav-btn:active {
+  box-shadow: 1px 1px 3px 0px #c8c8c8;
+  margin-top: 0px;
+  margin-bottom: -1px;
+  transition: 0.1s all;
+}
+@media screen and (max-width: 703px) {
+  .social-nav {
+    margin: auto;
+  }
+}
+
+#main-menu ul {
+  align-items: center;
+  height: 100%;
+}
+#main-menu .main-menu-btn a {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: #F9FBFF;
+  font-size: 16px;
+  margin: 0 6px;
+  padding: 12px;
+}
+#main-menu .main-menu-btn a:hover {
+  border-color: unset;
+  box-shadow: 1.5px 1.5px 3px 0px #c8c8c8;
   background-color: #EE105A;
+  transition: 0.3s all;
+}
+#main-menu .main-menu-btn a:active {
+  box-shadow: 1px 1px 3px 0px #c8c8c8;
+  margin-top: 0px;
+  transition: 0.1s all;
+}
+@media screen and (max-width: 703px) {
+  #main-menu {
+    display: none;
+  }
 }
 
 #fb-nav {
@@ -144,17 +203,14 @@ p {
 }
 
 #viber-nav {
-  color: #59267C;
-}
-
-#main-menu ul {
-  flex-basis: 50%;
+  color: #8f5db7;
 }
 
 #home {
   background: linear-gradient(to right, #000001, #5C0609);
-  height: 103vh;
+  min-height: 103vh;
   position: relative;
+  padding: 20px 0;
 }
 #home:before {
   content: "";
@@ -179,13 +235,46 @@ p {
 }
 #home img {
   max-height: 80vh;
+  max-width: 100%;
+}
+#home .title-content {
+  flex-basis: 650px;
+  flex-shrink: 2;
 }
 #home .title {
-  font-size: 88px;
+  font-size: 5em;
   font-weight: bold;
+  padding: 5px 5px 53px;
 }
 #home .title span {
   color: #F9FBFF;
+}
+#home .text-block p {
+  line-height: 40px;
+}
+#home .text-block span {
+  color: #EE105A;
+  font-weight: 600;
+  text-decoration: underline;
+}
+#home .btn-big {
+  border-color: #F00A41;
+  border-radius: 25px;
+  background-color: #F00A41;
+  color: #F9FBFF;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 62px;
+  max-width: 260px;
+  padding: 14px 28px;
+}
+@media screen and (max-width: 884px) {
+  #home .home-content {
+    flex-direction: column;
+  }
+  #home .img-container {
+    order: -1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

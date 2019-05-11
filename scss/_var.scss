@@ -32,6 +32,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-SemiBold.eot');
+    src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+        url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 // fonts
 
 %primaryFont {
@@ -49,6 +60,10 @@ $lightFontColor: #F9FBFF;
 
 // social networks colors
 
-$viberColor: #59267C;
+$viberColor: #8f5db7;
 $facebookColor: #3B5998;
 $instaColor: #405DE6;
+
+// BG colors
+
+$bigBtnBGColor: #F00A41;
