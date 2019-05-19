@@ -56,6 +56,29 @@ p {
 
 }
 
+.btn-big {
+    border-color: $bigBtnBGColor;
+    border-radius: 25px;
+    background-color: $bigBtnBGColor;
+    color: $lightFontColor;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    margin: 62px auto 0;
+    padding: 14px 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: darken($bigBtnBGColor, 5%);
+        background-color: darken($bigBtnBGColor, 5%);
+        margin-top: 60px;
+        margin-bottom: 2px;
+        box-shadow: 1px 1px 3px 0px rgba(200,200,200,1);
+        transition: 0.2s all;
+    }
+}
+
 // header section styles
 
 #home {
@@ -117,27 +140,6 @@ p {
             color: $titleColor;
             font-weight: 600;
             text-decoration: underline;
-        }
-    }
-
-    .btn-big {
-        border-color: $bigBtnBGColor;
-        border-radius: 25px;
-        background-color: $bigBtnBGColor;
-        color: $lightFontColor;
-        cursor: pointer;
-        font-size: 18px;
-        margin-top: 62px;
-        max-width: 260px;
-        padding: 14px 28px;
-
-        &:hover {
-            border-color: darken($bigBtnBGColor, 5%);
-            background-color: darken($bigBtnBGColor, 5%);
-            margin-top: 60px;
-            margin-bottom: 2px;
-            box-shadow: 1px 1px 3px 0px rgba(200,200,200,1);
-            transition: 0.2s all;
         }
     }
 
@@ -274,6 +276,7 @@ p {
             flex-basis: 414px;
             line-height: 22px;
             margin: 0 auto;
+            text-transform: uppercase;
         }
 
     }
@@ -306,4 +309,74 @@ p {
 
 }
 
+.timer-box {
+    margin: 0 auto;
+    max-width: 460px;
 
+    .timer-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    
+    .btn-big {
+        box-sizing: border-box;
+        max-width: 316px;
+
+        &:hover {
+            box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
+        }
+    }
+}
+
+#timer {
+    p {
+        color: $titleColor;
+        font-family: 'Open Sans';
+        font-size: 3em;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+            border-bottom: 4px solid $timerUnderline;
+            padding: 6px;
+            position: relative;
+            
+        }
+
+        #h {
+
+            &::after {
+                content: 'годин';
+                font-size: 14px;
+                position: absolute;
+                bottom: -24px;
+                left: 12px;
+            }
+        }
+        
+
+        #m {
+
+            &::after {
+                content: 'хвилин';
+                font-size: 14px;
+                position: absolute;
+                bottom: -24px;
+                left: 12px;
+            }
+        }
+
+        #s {
+
+            &::after {
+                content: 'секунд';
+                font-size: 14px;
+                position: absolute;
+                bottom: -24px;
+                left: 12px;
+            }
+        }        
+    }
+}

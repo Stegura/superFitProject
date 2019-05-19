@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -145,6 +146,28 @@ p {
   font-weight: 700;
 }
 
+.btn-big {
+  border-color: #F00A41;
+  border-radius: 25px;
+  background-color: #F00A41;
+  color: #F9FBFF;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 18px;
+  margin: 62px auto 0;
+  padding: 14px 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-big:hover {
+  border-color: #d8093a;
+  background-color: #d8093a;
+  margin-top: 60px;
+  margin-bottom: 2px;
+  box-shadow: 1px 1px 3px 0px #c8c8c8;
+  transition: 0.2s all;
+}
+
 #home {
   background: linear-gradient(to right, #000001, #5C0609);
   min-height: 97vh;
@@ -195,25 +218,6 @@ p {
   color: #EE105A;
   font-weight: 600;
   text-decoration: underline;
-}
-#home .btn-big {
-  border-color: #F00A41;
-  border-radius: 25px;
-  background-color: #F00A41;
-  color: #F9FBFF;
-  cursor: pointer;
-  font-size: 18px;
-  margin-top: 62px;
-  max-width: 260px;
-  padding: 14px 28px;
-}
-#home .btn-big:hover {
-  border-color: #d8093a;
-  background-color: #d8093a;
-  margin-top: 60px;
-  margin-bottom: 2px;
-  box-shadow: 1px 1px 3px 0px #c8c8c8;
-  transition: 0.2s all;
 }
 @media screen and (max-width: 884px) {
   #home .home-content {
@@ -323,6 +327,7 @@ p {
   flex-basis: 414px;
   line-height: 22px;
   margin: 0 auto;
+  text-transform: uppercase;
 }
 
 #galery {
@@ -343,6 +348,58 @@ p {
 #galery .galery-box .galery-item img {
   width: 100%;
   height: 100%;
+}
+
+.timer-box {
+  margin: 0 auto;
+  max-width: 460px;
+}
+.timer-box .timer-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.timer-box .btn-big {
+  box-sizing: border-box;
+  max-width: 316px;
+}
+.timer-box .btn-big:hover {
+  box-shadow: 2px 2px 5px 0px black;
+}
+
+#timer p {
+  color: #EE105A;
+  font-family: "Open Sans";
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+#timer p span {
+  border-bottom: 4px solid #EDC4CA;
+  padding: 6px;
+  position: relative;
+}
+#timer p #h::after {
+  content: "годин";
+  font-size: 14px;
+  position: absolute;
+  bottom: -24px;
+  left: 12px;
+}
+#timer p #m::after {
+  content: "хвилин";
+  font-size: 14px;
+  position: absolute;
+  bottom: -24px;
+  left: 12px;
+}
+#timer p #s::after {
+  content: "секунд";
+  font-size: 14px;
+  position: absolute;
+  bottom: -24px;
+  left: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */
