@@ -12,13 +12,46 @@
 
 @font-face {
     font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-ExtraBoldItalic.eot');
+    src: url('../fonts/TTNorms-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNorms-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/TTNorms-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/TTNorms-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms';
     src: url('../fonts/TTNorms-Bold.eot');
-    src: url('vTTNorms-Bold.eot?#iefix') format('embedded-opentype'),
-        url('vTTNorms-Bold.woff2') format('woff2'),
+    src: url('../fonts/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNorms-Bold.woff2') format('woff2'),
         url('../fonts/TTNorms-Bold.woff') format('woff'),
         url('../fonts/TTNorms-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-BoldItalic.eot');
+    src: url('../fonts/TTNorms-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNorms-BoldItalic.woff2') format('woff2'),
+        url('../fonts/TTNorms-BoldItalic.woff') format('woff'),
+        url('../fonts/TTNorms-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-ExtraBoldItalic.eot');
+    src: url('../fonts/TTNorms-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNorms-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/TTNorms-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/TTNorms-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
 }
 
 @font-face {
@@ -57,7 +90,9 @@
 
 $titleColor : #EE105A;
 $titleColorBlack: #000;
+$darkFontColor: #000;
 $lightFontColor: #F9FBFF;
+$spanColor: $titleColor;
 
 // social networks colors
 

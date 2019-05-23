@@ -66,10 +66,31 @@ a {
 }
 @font-face {
   font-family: "TT Norms";
+  src: url("../fonts/TTNorms-ExtraBoldItalic.eot");
+  src: url("../fonts/TTNorms-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/TTNorms-ExtraBoldItalic.woff") format("woff"), url("../fonts/TTNorms-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Norms";
   src: url("../fonts/TTNorms-Bold.eot");
-  src: url("vTTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("vTTNorms-Bold.woff2") format("woff2"), url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.ttf") format("truetype");
+  src: url("../fonts/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Bold.woff2") format("woff2"), url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-BoldItalic.eot");
+  src: url("../fonts/TTNorms-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-BoldItalic.woff2") format("woff2"), url("../fonts/TTNorms-BoldItalic.woff") format("woff"), url("../fonts/TTNorms-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-ExtraBoldItalic.eot");
+  src: url("../fonts/TTNorms-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/TTNorms-ExtraBoldItalic.woff") format("woff"), url("../fonts/TTNorms-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
 }
 @font-face {
   font-family: "Open Sans";
@@ -112,6 +133,10 @@ p {
   font-size: 18px;
 }
 
+span {
+  color: #EE105A;
+}
+
 .wraper {
   max-width: 1155px;
   margin: 0 auto;
@@ -135,6 +160,10 @@ p {
   color: #F9FBFF;
   font-size: 1.5em;
 }
+.text-block p span {
+  color: #EE105A;
+  font-weight: 600;
+}
 
 .title-s {
   color: #000;
@@ -144,6 +173,12 @@ p {
 .title-s .sub-title-s {
   color: #EE105A;
   font-weight: 700;
+}
+
+.title-xs {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .btn-big {
@@ -215,8 +250,6 @@ p {
   line-height: 40px;
 }
 #home .text-block span {
-  color: #EE105A;
-  font-weight: 600;
   text-decoration: underline;
 }
 @media screen and (max-width: 884px) {
@@ -301,7 +334,7 @@ p {
 }
 
 #advantages {
-  background: linear-gradient(to right, #EE91A3, #F0E6E9);
+  background: linear-gradient(to left, #EE91A3, #EAA9B3);
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
   padding: 100px 0;
 }
@@ -330,22 +363,23 @@ p {
   text-transform: uppercase;
 }
 
-#galery {
-  background: linear-gradient(to right, #EE91A3, #F0E6E9);
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+#gallery {
+  background: linear-gradient(to right, #EE91A3, #EAA9B3);
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.75);
   padding: 100px 0;
 }
-#galery .galery-box {
+#gallery .galery-box {
   flex-wrap: wrap;
   margin-top: 40px;
 }
-#galery .galery-box .galery-item {
+#gallery .galery-box .galery-item {
   box-sizing: border-box;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
   flex-basis: 330px;
   height: 330px;
   margin-bottom: 46px;
 }
-#galery .galery-box .galery-item img {
+#gallery .galery-box .galery-item img {
   width: 100%;
   height: 100%;
 }
@@ -353,11 +387,6 @@ p {
 .timer-box {
   margin: 0 auto;
   max-width: 460px;
-}
-.timer-box .timer-title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
 }
 .timer-box .btn-big {
   box-sizing: border-box;
@@ -380,6 +409,13 @@ p {
   padding: 6px;
   position: relative;
 }
+#timer p #d::after {
+  content: "днів";
+  font-size: 14px;
+  position: absolute;
+  bottom: -24px;
+  left: 16px;
+}
 #timer p #h::after {
   content: "годин";
   font-size: 14px;
@@ -392,14 +428,55 @@ p {
   font-size: 14px;
   position: absolute;
   bottom: -24px;
-  left: 12px;
+  left: 4px;
 }
 #timer p #s::after {
   content: "секунд";
   font-size: 14px;
   position: absolute;
   bottom: -24px;
-  left: 12px;
+  left: 6px;
+}
+
+#program {
+  background: linear-gradient(to right, #889797, #E9F8F8);
+  padding: 90px 0 0 0;
+}
+#program .text-block {
+  max-width: 816px;
+}
+#program .text-block p {
+  color: #000;
+  font-size: 18px;
+  line-height: 28px;
+}
+#program .title-xs {
+  margin: 20px 0 42px;
+}
+#program .program-list {
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#program .program-list li {
+  counter-increment: my-awesome-counter;
+  color: #000;
+  font-family: "TT Norms";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 32px;
+}
+#program .program-list li::before {
+  content: "#" counter(my-awesome-counter);
+  color: #EE105A;
+  font-weight: bold;
+  font-family: "TT Norms";
+  font-size: 64px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 90px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

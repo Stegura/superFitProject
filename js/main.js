@@ -1,27 +1,35 @@
 // CountDowm timer
 
 // Set the hours minutes and second HTML elements
-let h = document.getElementById('h'),
+let d = document.getElementById('d'),
+    h = document.getElementById('h'),
     m = document.getElementById('m'),
     s = document.getElementById('s');
 
-var countDownDate = new Date("may 30, 2019 23:14:55").getTime();
+let countDownDate = new Date("may 30, 2019 23:14:55").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+let x = setInterval(function() {
 
     // Get today's date and time
-    var now = new Date().getTime();
+    let now = new Date().getTime();
     
     // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+    let distance = countDownDate - now;
     
     // Time calculations for days, hours, minutes and seconds
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
+    if (days < 10) {
+        d.textContent = `0${days}`;
+    } else {
+        d.textContent = days;
+    }
+
     if (hours < 10) {
         h.textContent = `0${hours}`;
     } else {
