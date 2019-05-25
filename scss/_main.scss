@@ -216,8 +216,10 @@ span {
         @extend %secondaryFont;
 
         a {
-            border: 2px solid transparent;
-            border-radius: 8px;
+            border-bottom: 1px solid transparent;
+            // border-top: 1px solid transparent;
+            // border: 1px solid transparent;
+            border-radius: 4px;
             color: $lightFontColor;
             font-size: 16px;
             margin: 0 6px;
@@ -225,16 +227,10 @@ span {
 
             &:hover {
                 border-color: unset;
-                box-shadow: 1.5px 1.5px 3px 0px rgba(200,200,200,1);
-                background-color: $titleColor;
+                box-shadow: 0px 0px 4px 0px rgba(200,200,200,1);
+                // background-color: $titleColor;
                 transition: 0.4s all;
                 text-decoration: none;
-            }
-    
-            &:active {
-                box-shadow: 1px 1px 3px 0px rgba(200,200,200,1);
-                margin-top: 0px;
-                transition: 0.1s all;
             }
         }
     }
@@ -407,7 +403,7 @@ span {
 
 #program {
     background: linear-gradient(to right,#889797, #E9F8F8);
-    padding: 90px 0 0 0;
+    padding: 90px 0 40px 0;
     
     .text-block {
         max-width: 816px;
@@ -450,4 +446,70 @@ span {
             }
         }    
     }
+}
+
+// reviews section
+
+#reviews {
+    background: linear-gradient(to left,#889797, #E9F8F8);
+    padding: 90px 0 40px 0;
+
+    .swiper-slide {
+        align-items: center;
+        display: flex;
+        height: 710px;
+        justify-content: center;
+        // position: relative;
+    }
+
+    .swiper-button-next {
+        right: 16px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-image: none;
+
+        .fas {
+            border-radius: 50%;
+            font-size: 40px;
+            color: $lightFontColor;
+            opacity: .5;
+
+            &:hover {
+                box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+                margin-top: -2px;
+                transition: 0.2s all;
+            }
+
+            &:active {
+                margin-top: 0px;
+                transition: 0.2s all;
+
+            }
+        }
+    }
+
+    .review-container {
+        position: relative;
+    }
+
+    .review-title,
+    .review-text {
+        box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+    }
+
+    .review-title {
+        box-sizing: border-box;
+        border-radius: 20px;
+        position: absolute;
+        left: -70px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .review-text {
+        border-radius: 22px;
+    }
+
 }

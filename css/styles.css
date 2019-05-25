@@ -296,8 +296,8 @@ span {
   height: 100%;
 }
 #main-menu .main-menu-btn a {
-  border: 2px solid transparent;
-  border-radius: 8px;
+  border-bottom: 1px solid transparent;
+  border-radius: 4px;
   color: #F9FBFF;
   font-size: 16px;
   margin: 0 6px;
@@ -305,15 +305,9 @@ span {
 }
 #main-menu .main-menu-btn a:hover {
   border-color: unset;
-  box-shadow: 1.5px 1.5px 3px 0px #c8c8c8;
-  background-color: #EE105A;
+  box-shadow: 0px 0px 4px 0px #c8c8c8;
   transition: 0.4s all;
   text-decoration: none;
-}
-#main-menu .main-menu-btn a:active {
-  box-shadow: 1px 1px 3px 0px #c8c8c8;
-  margin-top: 0px;
-  transition: 0.1s all;
 }
 @media screen and (max-width: 703px) {
   #main-menu {
@@ -440,7 +434,7 @@ span {
 
 #program {
   background: linear-gradient(to right, #889797, #E9F8F8);
-  padding: 90px 0 0 0;
+  padding: 90px 0 40px 0;
 }
 #program .text-block {
   max-width: 816px;
@@ -477,6 +471,60 @@ span {
   font-style: italic;
   line-height: 90px;
   margin-right: 10px;
+}
+
+#reviews {
+  background: linear-gradient(to left, #889797, #E9F8F8);
+  padding: 90px 0 40px 0;
+}
+#reviews .swiper-slide {
+  align-items: center;
+  display: flex;
+  height: 710px;
+  justify-content: center;
+}
+#reviews .swiper-button-next {
+  right: 16px;
+}
+#reviews .swiper-button-prev,
+#reviews .swiper-button-next {
+  background-image: none;
+}
+#reviews .swiper-button-prev .fas,
+#reviews .swiper-button-next .fas {
+  border-radius: 50%;
+  font-size: 40px;
+  color: #F9FBFF;
+  opacity: 0.5;
+}
+#reviews .swiper-button-prev .fas:hover,
+#reviews .swiper-button-next .fas:hover {
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  margin-top: -2px;
+  transition: 0.2s all;
+}
+#reviews .swiper-button-prev .fas:active,
+#reviews .swiper-button-next .fas:active {
+  margin-top: 0px;
+  transition: 0.2s all;
+}
+#reviews .review-container {
+  position: relative;
+}
+#reviews .review-title,
+#reviews .review-text {
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
+}
+#reviews .review-title {
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: absolute;
+  left: -70px;
+  width: 50px;
+  height: 50px;
+}
+#reviews .review-text {
+  border-radius: 22px;
 }
 
 /*# sourceMappingURL=styles.css.map */
