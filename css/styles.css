@@ -141,6 +141,11 @@ span {
   max-width: 1155px;
   margin: 0 auto;
 }
+@media screen and (max-width: 528px) {
+  .wraper {
+    margin: 0 5px;
+  }
+}
 
 .flex-container-row {
   align-items: center;
@@ -174,6 +179,12 @@ span {
   color: #EE105A;
   font-weight: 700;
 }
+@media screen and (max-width: 528px) {
+  .title-s {
+    font-size: 40px;
+    padding: 0 0 36px 0;
+  }
+}
 
 .title-xs {
   font-size: 20px;
@@ -201,6 +212,14 @@ span {
   margin-bottom: 2px;
   box-shadow: 1px 1px 3px 0px #c8c8c8;
   transition: 0.2s all;
+}
+@media screen and (max-width: 528px) {
+  .btn-big {
+    margin: 32px auto 0;
+  }
+  .btn-big:hover {
+    margin-top: 30px;
+  }
 }
 
 #home {
@@ -258,6 +277,22 @@ span {
   }
   #home .img-container {
     order: -1;
+  }
+}
+@media screen and (max-width: 550px) {
+  #home .title {
+    font-size: 48px;
+    padding-bottom: 20px;
+  }
+  #home .text-block p {
+    font-size: 1.5em;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 528px) {
+  #home .text-block p {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -343,6 +378,7 @@ span {
 }
 #advantages .adv-block .adv-block-img {
   flex-basis: 86px;
+  margin-right: 6px;
 }
 #advantages .adv-block .adv-block-img img {
   display: block;
@@ -356,26 +392,79 @@ span {
   margin: 0 auto;
   text-transform: uppercase;
 }
+@media screen and (max-width: 850px) {
+  #advantages .adv-block {
+    margin: 20px 0;
+  }
+  #advantages .adv-block .adv-block-text {
+    flex-basis: 414px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 455px) {
+  #advantages .adv-block .adv-block-text {
+    flex-basis: 270px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #advantages .adv-block .adv-block-img {
+    flex-basis: 60px;
+    max-width: 60px;
+  }
+  #advantages .adv-block .adv-block-img img {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 385px) {
+  #advantages .adv-block .adv-block-img img {
+    max-height: 45;
+    width: 45px;
+  }
+}
+@media screen and (max-width: 792px) {
+  #advantages {
+    padding: 40px 0;
+  }
+  #advantages .flex-container-row {
+    flex-direction: column;
+  }
+}
 
 #gallery {
   background: linear-gradient(to right, #EE91A3, #EAA9B3);
   box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.75);
   padding: 100px 0;
 }
-#gallery .galery-box {
+#gallery .gallery-box {
   flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 40px;
 }
-#gallery .galery-box .galery-item {
+#gallery .gallery-box .gallery-item {
   box-sizing: border-box;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
   flex-basis: 330px;
   height: 330px;
-  margin-bottom: 46px;
+  margin: 0 10px 46px;
 }
-#gallery .galery-box .galery-item img {
+@media screen and (max-width: 380px) {
+  #gallery .gallery-box .gallery-item {
+    flex-basis: 270px;
+    height: 270px;
+  }
+}
+#gallery .gallery-box .gallery-item img {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 528px) {
+  #gallery .btn-big {
+    margin: 48px auto 0;
+  }
+  #gallery .btn-big:hover {
+    margin-top: 46px;
+    margin-bottom: 2px;
+  }
 }
 
 .timer-box {
@@ -431,10 +520,27 @@ span {
   bottom: -24px;
   left: 6px;
 }
+@media screen and (max-width: 528px) {
+  #timer p {
+    font-size: 40px;
+  }
+  #timer p #d::after {
+    left: 12px;
+  }
+  #timer p #h::after {
+    left: 4px;
+  }
+  #timer p #m::after {
+    left: -2px;
+  }
+  #timer p #s::after {
+    left: 0;
+  }
+}
 
 #program {
   background: linear-gradient(to right, #889797, #E9F8F8);
-  padding: 90px 0 40px 0;
+  padding: 90px 0 100px 0;
 }
 #program .text-block {
   max-width: 816px;
@@ -452,6 +558,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  list-style-position: outside;
 }
 #program .program-list li {
   counter-increment: my-awesome-counter;
@@ -472,6 +579,34 @@ span {
   line-height: 90px;
   margin-right: 10px;
 }
+@media screen and (max-width: 1132px) {
+  #program .program-list li {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 760px) {
+  #program .program-list li {
+    font-size: 20px;
+  }
+  #program .program-list li::before {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #program .program-list li {
+    margin: 14px 0;
+    text-align: center;
+  }
+  #program .program-list li::before {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #program .program-list {
+    flex-direction: column;
+  }
+}
 
 #reviews {
   background: linear-gradient(to left, #889797, #E9F8F8);
@@ -482,6 +617,21 @@ span {
   display: flex;
   height: 710px;
   justify-content: center;
+}
+@media screen and (max-width: 660px) {
+  #reviews .swiper-slide {
+    height: 360px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #reviews .swiper-slide {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 390px) {
+  #reviews .swiper-slide {
+    height: 200px;
+  }
 }
 #reviews .swiper-button-next {
   right: 16px;
@@ -508,6 +658,12 @@ span {
   margin-top: 0px;
   transition: 0.2s all;
 }
+@media screen and (max-width: 660px) {
+  #reviews .swiper-button-prev,
+#reviews .swiper-button-next {
+    display: none;
+  }
+}
 #reviews .review-container {
   position: relative;
 }
@@ -520,11 +676,67 @@ span {
   border-radius: 20px;
   position: absolute;
   left: -70px;
+  top: 2px;
   width: 50px;
   height: 50px;
 }
+@media screen and (max-width: 660px) {
+  #reviews .review-title {
+    border-radius: 12px;
+    left: -36px;
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #reviews .review-title {
+    border-radius: 10px;
+    left: -46px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 430px) {
+  #reviews .review-title {
+    border-radius: 10px;
+    left: -30px;
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #reviews .review-title {
+    border-radius: 10px;
+    left: -26px;
+    width: 20px;
+    height: 20px;
+  }
+}
 #reviews .review-text {
   border-radius: 22px;
+}
+@media screen and (max-width: 660px) {
+  #reviews .review-text {
+    max-height: 360px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #reviews .review-text {
+    max-height: 250px;
+  }
+}
+@media screen and (max-width: 390px) {
+  #reviews .review-text {
+    max-height: 200px;
+  }
+}
+#reviews .swiper-scrollbar {
+  margin-top: 10px;
+}
+@media screen and (min-width: 660px) {
+  #reviews .swiper-scrollbar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -78,11 +78,36 @@ var mySwiper = new Swiper ('.swiper-container', {
     },
   })
 
-// window.onload = function () {
-//     //initialize swiper when document ready
-//     var mySwiper = new Swiper ('.swiper-container', {
-//       // Optional parameters
-//       direction: 'vertical',
-//       loop: true
-//     })
-// };
+// Add Swiper to gallery section if screen width less than 720px
+
+// function addSwiperToGallery(){
+//     let galleryBoxWraper = document.getElementsByClassName('gallery-box-wraper'),
+//         galleryBox = document.getElementsByClassName('galery-box'),
+//         galleryItem = document.getElementsByClassName('galery-item');
+
+//     let l = galleryItem.length;
+
+//     // galleryBoxWraper[0].classList.add('swiper-container');
+//     galleryBox[0].classList.add('swiper-wrapper');
+
+//     for (let i = 0; i < l; i++) {
+//         galleryItem[i].classList.add('swiper-slide');
+//     }
+
+//     // let gallerySwiper = new Swiper ('.gallery-box-wraper', {
+//     //     // Optional parameters
+//     //     // direction: 'vertical',
+//     //     loop: true,
+    
+//     //     // Navigation arrows
+//     //     navigation: {
+//     //       nextEl: '.swiper-button-next',
+//     //       prevEl: '.swiper-button-prev',
+//     //     },
+    
+//     //     // And if we need scrollbar
+//     //     scrollbar: {
+//     //       el: '.swiper-scrollbar',
+//     //     },
+//     //   })
+// }
