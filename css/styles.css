@@ -106,14 +106,14 @@ a {
   font-weight: 600;
   font-style: normal;
 }
-h1,
+#about .about-text .member-position, #program .program-list li::before, #program .program-list li, h1,
 h2,
 h3,
 h4 {
   font-family: "TT Norms";
 }
 
-#main-menu .main-menu-btn, p {
+#about .about-text .member-skills, #about .about-text .member-name, #timer p, #advantages .adv-block .adv-block-text, #main-menu .main-menu-btn, .btn-big, p {
   font-family: "Open Sans";
 }
 
@@ -141,7 +141,7 @@ span {
   max-width: 1155px;
   margin: 0 auto;
 }
-@media screen and (max-width: 528px) {
+@media screen and (max-width: 960px) {
   .wraper {
     margin: 0 5px;
   }
@@ -198,7 +198,6 @@ span {
   background-color: #F00A41;
   color: #F9FBFF;
   cursor: pointer;
-  font-family: "Open Sans";
   font-size: 18px;
   margin: 62px auto 0;
   padding: 14px 28px;
@@ -385,7 +384,6 @@ span {
   margin: auto;
 }
 #advantages .adv-block .adv-block-text {
-  font-family: "Open Sans";
   font-weight: 600;
   flex-basis: 414px;
   line-height: 22px;
@@ -481,7 +479,6 @@ span {
 
 #timer p {
   color: #EE105A;
-  font-family: "Open Sans";
   font-size: 3em;
   font-weight: 600;
   text-align: center;
@@ -539,7 +536,7 @@ span {
 }
 
 #program {
-  background: linear-gradient(to right, #889797, #E9F8F8);
+  background: linear-gradient(to left, #889797, #E9F8F8);
   padding: 90px 0 100px 0;
 }
 #program .text-block {
@@ -563,7 +560,6 @@ span {
 #program .program-list li {
   counter-increment: my-awesome-counter;
   color: #000;
-  font-family: "TT Norms";
   font-size: 22px;
   font-weight: bold;
   line-height: 32px;
@@ -572,7 +568,6 @@ span {
   content: "#" counter(my-awesome-counter);
   color: #EE105A;
   font-weight: bold;
-  font-family: "TT Norms";
   font-size: 64px;
   font-weight: bold;
   font-style: italic;
@@ -609,7 +604,7 @@ span {
 }
 
 #reviews {
-  background: linear-gradient(to left, #889797, #E9F8F8);
+  background: linear-gradient(to right, #889797, #E9F8F8);
   padding: 90px 0 40px 0;
 }
 #reviews .swiper-slide {
@@ -736,6 +731,111 @@ span {
 @media screen and (min-width: 660px) {
   #reviews .swiper-scrollbar {
     display: none;
+  }
+}
+
+#about {
+  background: linear-gradient(to right, #859297, #F3F5F5);
+  padding: 90px 0 60px;
+}
+#about .flex-container-row {
+  align-items: stretch;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
+  #about .flex-container-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#about .about-image {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .about-image img {
+  width: 80%;
+}
+@media screen and (max-width: 960px) {
+  #about .about-image {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 770px) {
+  #about .about-image {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 580px) {
+  #about .about-image {
+    flex-basis: unset;
+    width: 100%;
+  }
+}
+#about .about-text {
+  align-items: flex-start;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+#about .about-text .member-name {
+  font-size: 26px;
+  line-height: 36px;
+  text-align: left;
+}
+@media screen and (max-width: 580px) {
+  #about .about-text .member-name {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 10px 0;
+  }
+}
+#about .about-text .member-position {
+  background: #EF2464;
+  color: #F9FBFF;
+  font-size: 22px;
+  line-height: 24px;
+  padding: 12px 8px 8px;
+}
+@media screen and (max-width: 580px) {
+  #about .about-text .member-position {
+    font-size: 16px;
+    line-height: 36px;
+    margin: 10px 0;
+  }
+}
+#about .about-text .member-discription {
+  color: #464646;
+  font-size: 18px;
+  line-height: 36px;
+}
+@media screen and (max-width: 580px) {
+  #about .about-text .member-discription {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 10px 0;
+  }
+}
+#about .about-text .member-skills {
+  color: #464646;
+  font-size: 18px;
+  line-height: 30px;
+  list-style: square inside url("data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==");
+  text-transform: uppercase;
+}
+@media screen and (max-width: 580px) {
+  #about .about-text .member-skills {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  #about .about-text {
+    flex-basis: unset;
   }
 }
 
