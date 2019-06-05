@@ -6,7 +6,7 @@ let d = document.getElementById('d'),
     m = document.getElementById('m'),
     s = document.getElementById('s');
 
-let countDownDate = new Date("may 30, 2019 23:14:55").getTime();
+let countDownDate = new Date("jul 30, 2019 23:14:55").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function() {
@@ -78,36 +78,21 @@ var mySwiper = new Swiper ('.swiper-container', {
     },
   })
 
-// Add Swiper to gallery section if screen width less than 720px
+// popup open/close
 
-// function addSwiperToGallery(){
-//     let galleryBoxWraper = document.getElementsByClassName('gallery-box-wraper'),
-//         galleryBox = document.getElementsByClassName('galery-box'),
-//         galleryItem = document.getElementsByClassName('galery-item');
+let firstOpenPopUpBtn = document.getElementById('open-first-form'),
+    secondOpenPopUpBtn = document.getElementById('open-timer-form'),
+    closePopUpBtn = document.getElementById('close-popup'),
+    popUpElement = document.getElementById('popup');
 
-//     let l = galleryItem.length;
+closePopUpBtn.onclick = function () {
+    popUpElement.style.display = "none";
+};
 
-//     // galleryBoxWraper[0].classList.add('swiper-container');
-//     galleryBox[0].classList.add('swiper-wrapper');
+firstOpenPopUpBtn.onclick = function () {
+    popUpElement.style.display = "block";
+};
 
-//     for (let i = 0; i < l; i++) {
-//         galleryItem[i].classList.add('swiper-slide');
-//     }
-
-//     // let gallerySwiper = new Swiper ('.gallery-box-wraper', {
-//     //     // Optional parameters
-//     //     // direction: 'vertical',
-//     //     loop: true,
-    
-//     //     // Navigation arrows
-//     //     navigation: {
-//     //       nextEl: '.swiper-button-next',
-//     //       prevEl: '.swiper-button-prev',
-//     //     },
-    
-//     //     // And if we need scrollbar
-//     //     scrollbar: {
-//     //       el: '.swiper-scrollbar',
-//     //     },
-//     //   })
-// }
+secondOpenPopUpBtn.onclick = function () {
+    popUpElement.style.display = "block";
+};

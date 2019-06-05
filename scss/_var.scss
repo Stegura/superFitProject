@@ -88,23 +88,30 @@
 
 //Font colors
 
-$titleColor : #EE105A;
-$titleColorBlack: #000;
-$darkFontColor: #000;
-$lightFontColor: #F9FBFF;
-$grayFontColor: #464646;
+$titleColor : rgb(238, 16, 90);
+$titleColorBlack: rgb(0, 0, 0);
+$darkFontColor: rgb(0, 0, 0);
+$lightFontColor: rgb(249, 251, 255);
+$grayFontColor: rgb(70, 70, 70);
+$lightGrayFontColor: lighten($grayFontColor,45%);
 $spanColor: $titleColor;
 
 // social networks colors
 
-$viberColor: #8f5db7;
-$facebookColor: #3B5998;
-$instaColor: #405DE6;
+$viberColor: rgb(143, 93, 183);
+$facebookColor: rgb(59, 89, 152);
+$instaColor: rgb(64, 93, 230);
 
-// BG colors
+// BG & other colors
 
-$bigBtnBGColor: #F00A41;
+$bigBtnBGColor: rgb(240, 10, 65);
 
-$timerUnderline: #EDC4CA;
+$timerUnderline: rgb(237, 196, 202);
 
-$spanBGColor: #EF2464;
+$spanBGColor: rgb(239, 36, 100);
+
+$tariffsBGColor: rgba(237, 196, 202, .1);
+
+$popupBGColor: rgba(40, 40, 40, .6);
+
+$popupInputBGColor: lighten($timerUnderline, 9%);

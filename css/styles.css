@@ -106,14 +106,15 @@ a {
   font-weight: 600;
   font-style: normal;
 }
-#about .about-text .member-position, #program .program-list li::before, #program .program-list li, h1,
+#leed-form input, #tariffs .tariffs-block-item .price,
+#tariffs .tariffs-block-item .item-title, #tariffs .tariffs-block-item ul li::before, #about .about-text .member-position, #program .program-list li::before, #program .program-list li, h1,
 h2,
 h3,
 h4 {
   font-family: "TT Norms";
 }
 
-#about .about-text .member-skills, #about .about-text .member-name, #timer p, #advantages .adv-block .adv-block-text, #main-menu .main-menu-btn, .btn-big, p {
+#tariffs .tariffs-block-item ul, #about .about-text .member-skills, #about .about-text .member-name, #timer p, #advantages .adv-block .adv-block-text, #main-menu .main-menu-btn, .btn-sml, .btn-big, p {
   font-family: "Open Sans";
 }
 
@@ -126,7 +127,7 @@ h4 {
 
 h1,
 h2 {
-  color: #EE105A;
+  color: #ee105a;
 }
 
 p {
@@ -134,7 +135,7 @@ p {
 }
 
 span {
-  color: #EE105A;
+  color: #ee105a;
 }
 
 .wraper {
@@ -162,21 +163,21 @@ span {
 
 .text-block p {
   text-align: center;
-  color: #F9FBFF;
+  color: #f9fbff;
   font-size: 1.5em;
 }
 .text-block p span {
-  color: #EE105A;
+  color: #ee105a;
   font-weight: 600;
 }
 
 .title-s {
-  color: #000;
+  color: black;
   font-size: 48px;
   padding: 0 0 45px 0;
 }
 .title-s .sub-title-s {
-  color: #EE105A;
+  color: #ee105a;
   font-weight: 700;
 }
 @media screen and (max-width: 528px) {
@@ -193,10 +194,10 @@ span {
 }
 
 .btn-big {
-  border-color: #F00A41;
+  border-color: #f00a41;
   border-radius: 25px;
-  background-color: #F00A41;
-  color: #F9FBFF;
+  background-color: #f00a41;
+  color: #f9fbff;
   cursor: pointer;
   font-size: 18px;
   margin: 62px auto 0;
@@ -217,6 +218,35 @@ span {
     margin: 32px auto 0;
   }
   .btn-big:hover {
+    margin-top: 30px;
+  }
+}
+
+.btn-sml {
+  border-color: #f00a41;
+  border-radius: 25px;
+  background-color: #f00a41;
+  color: #f9fbff;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-sml:hover {
+  border-color: #d8093a;
+  background-color: #d8093a;
+  margin-top: 18px;
+  margin-bottom: 2px;
+  box-shadow: 1px 1px 3px 0px #505050;
+  transition: 0.2s all;
+}
+@media screen and (max-width: 528px) {
+  .btn-sml {
+    margin: 32px auto 0;
+  }
+  .btn-sml:hover {
     margin-top: 30px;
   }
 }
@@ -262,7 +292,7 @@ span {
   padding: 5px 5px 53px;
 }
 #home .title span {
-  color: #F9FBFF;
+  color: #f9fbff;
 }
 #home .text-block p {
   line-height: 40px;
@@ -332,7 +362,7 @@ span {
 #main-menu .main-menu-btn a {
   border-bottom: 1px solid transparent;
   border-radius: 4px;
-  color: #F9FBFF;
+  color: #f9fbff;
   font-size: 16px;
   margin: 0 6px;
   padding: 12px;
@@ -350,11 +380,11 @@ span {
 }
 
 #fb-nav {
-  color: #3B5998;
+  color: #3b5998;
 }
 
 #insta-nav {
-  color: #405DE6;
+  color: #405de6;
 }
 
 #viber-nav {
@@ -478,14 +508,14 @@ span {
 }
 
 #timer p {
-  color: #EE105A;
+  color: #ee105a;
   font-size: 3em;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 }
 #timer p span {
-  border-bottom: 4px solid #EDC4CA;
+  border-bottom: 4px solid #edc4ca;
   padding: 6px;
   position: relative;
 }
@@ -543,7 +573,7 @@ span {
   max-width: 816px;
 }
 #program .text-block p {
-  color: #000;
+  color: black;
   font-size: 18px;
   line-height: 28px;
 }
@@ -559,14 +589,14 @@ span {
 }
 #program .program-list li {
   counter-increment: my-awesome-counter;
-  color: #000;
+  color: black;
   font-size: 22px;
   font-weight: bold;
   line-height: 32px;
 }
 #program .program-list li::before {
   content: "#" counter(my-awesome-counter);
-  color: #EE105A;
+  color: #ee105a;
   font-weight: bold;
   font-size: 64px;
   font-weight: bold;
@@ -639,7 +669,7 @@ span {
 #reviews .swiper-button-next .fas {
   border-radius: 50%;
   font-size: 40px;
-  color: #F9FBFF;
+  color: #f9fbff;
   opacity: 0.5;
 }
 #reviews .swiper-button-prev .fas:hover,
@@ -794,8 +824,8 @@ span {
   }
 }
 #about .about-text .member-position {
-  background: #EF2464;
-  color: #F9FBFF;
+  background: #ef2464;
+  color: #f9fbff;
   font-size: 22px;
   line-height: 24px;
   padding: 12px 8px 8px;
@@ -837,6 +867,127 @@ span {
   #about .about-text {
     flex-basis: unset;
   }
+}
+
+#tariffs {
+  background: linear-gradient(to left, #000001, #5C0609);
+  position: relative;
+  padding: 40px 0;
+}
+#tariffs .tariffs-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#tariffs .tariffs-block-item {
+  background: rgba(237, 196, 202, 0.1);
+  box-shadow: 1px 1px 4px 0px rgba(80, 80, 80, 0.75);
+  border-radius: 16px;
+  display: flex;
+  flex-basis: 300px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 10px;
+  padding: 40px 20px;
+}
+#tariffs .tariffs-block-item ul {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: space-around;
+  list-style-position: outside;
+  margin: 20px 0;
+}
+#tariffs .tariffs-block-item ul li {
+  color: #b9b9b9;
+  font-size: 16px;
+  line-height: 24px;
+}
+#tariffs .tariffs-block-item ul li::before {
+  content: "#";
+  color: #ee105a;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  margin-right: 10px;
+}
+#tariffs .tariffs-block-item .price,
+#tariffs .tariffs-block-item .item-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+#tariffs .tariffs-block-item .item-title {
+  margin-bottom: 20px;
+}
+#tariffs .tariffs-block-item .price {
+  margin-top: 20px;
+}
+
+#popup {
+  background: rgba(40, 40, 40, 0.6);
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#leed-form {
+  background: linear-gradient(to right, #889797, #E9F8F8);
+  border-radius: 8px;
+  max-width: 300px;
+  margin: auto;
+  padding: 40px 0;
+  position: relative;
+}
+#leed-form .title-s {
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px 0;
+}
+#leed-form input {
+  display: block;
+  font-size: 16px;
+  margin: 20px auto 0;
+  min-width: 260px;
+  outline: none;
+  padding: 4px 6px;
+}
+#leed-form .btn-sml {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 40px;
+}
+#leed-form .form-input {
+  background: #f8e7ea;
+  border-radius: 8px;
+  border: 2px solid rgba(237, 196, 202, 0.1);
+}
+#leed-form #close-popup {
+  border-radius: 50%;
+  border: none;
+  color: #464646;
+  cursor: pointer;
+  font-size: 30px;
+  opacity: 0.6;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+#leed-form #close-popup:hover {
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  margin-top: -1px;
+  transition: 0.2s all;
+}
+#leed-form #close-popup:active {
+  margin-top: 0px;
+  transition: 0.2s all;
 }
 
 /*# sourceMappingURL=styles.css.map */
