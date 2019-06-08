@@ -70,7 +70,6 @@ span {
     @media screen and (max-width: 528px) {
         font-size: 40px;
         padding: 0 0 36px 0;
-
     }
 
 }
@@ -97,9 +96,9 @@ span {
     &:hover {
         border-color: darken($bigBtnBGColor, 5%);
         background-color: darken($bigBtnBGColor, 5%);
+        box-shadow: 1px 1px 3px 0px rgba(200,200,200,1);
         margin-top: 60px;
         margin-bottom: 2px;
-        box-shadow: 1px 1px 3px 0px rgba(200,200,200,1);
         transition: 0.2s all;
     }
 
@@ -128,9 +127,9 @@ span {
     &:hover {
         border-color: darken($bigBtnBGColor, 5%);
         background-color: darken($bigBtnBGColor, 5%);
+        box-shadow: 1px 1px 3px 0px rgba(80, 80, 80,1);
         margin-top: 18px;
         margin-bottom: 2px;
-        box-shadow: 1px 1px 3px 0px rgba(80, 80, 80,1);
         transition: 0.2s all;
     }
 
@@ -890,7 +889,7 @@ span {
 
 
 #tariffs {
-    background: linear-gradient(to left,#000001, #5C0609);
+    background: linear-gradient(to right,#240304, #5C0609);
     position: relative;
     padding: 40px 0;
 
@@ -959,10 +958,48 @@ span {
 
 }
 
+// Contact styles
+
+#contact {
+    background: linear-gradient(to left,#240304, #000001);
+    padding: 14px 0;
+
+    .title-s {
+        color: $titleColor;
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+
+    .contact-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .contact-item {
+        font-size: 16px;
+        margin-bottom: 18px;
+
+        a {
+            color: $lightFontColor;
+
+            .fab,
+            .fas,
+            .far {
+                font-size: 20px;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
 
 // forms & popup styles
 
-#popup {
+#popup,
+#lite-popup,
+#pro-popup,
+#elite-popup {
     background: $popupBGColor;
     display: none;
     position: fixed;
@@ -975,7 +1012,10 @@ span {
     overflow: auto;
 }
 
-#leed-form {
+#leed-form,
+#leed-form-lite,
+#leed-form-pro,
+#leed-form-elite {
     background: linear-gradient(to right,#889797, #E9F8F8);
     border-radius: 8px;
     max-width: 300px;
@@ -1011,7 +1051,10 @@ span {
         border: 2px solid $tariffsBGColor;
     }
 
-    #close-popup {
+    #close-popup,
+    #close-lite-popup,
+    #close-pro-popup,
+    #close-elite-popup {
         border-radius: 50%;
         border: none;
         color: $grayFontColor;

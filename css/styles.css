@@ -106,7 +106,10 @@ a {
   font-weight: 600;
   font-style: normal;
 }
-#leed-form input, #tariffs .tariffs-block-item .price,
+#leed-form input,
+#leed-form-lite input,
+#leed-form-pro input,
+#leed-form-elite input, #tariffs .tariffs-block-item .price,
 #tariffs .tariffs-block-item .item-title, #tariffs .tariffs-block-item ul li::before, #about .about-text .member-position, #program .program-list li::before, #program .program-list li, h1,
 h2,
 h3,
@@ -208,9 +211,9 @@ span {
 .btn-big:hover {
   border-color: #d8093a;
   background-color: #d8093a;
+  box-shadow: 1px 1px 3px 0px #c8c8c8;
   margin-top: 60px;
   margin-bottom: 2px;
-  box-shadow: 1px 1px 3px 0px #c8c8c8;
   transition: 0.2s all;
 }
 @media screen and (max-width: 528px) {
@@ -237,9 +240,9 @@ span {
 .btn-sml:hover {
   border-color: #d8093a;
   background-color: #d8093a;
+  box-shadow: 1px 1px 3px 0px #505050;
   margin-top: 18px;
   margin-bottom: 2px;
-  box-shadow: 1px 1px 3px 0px #505050;
   transition: 0.2s all;
 }
 @media screen and (max-width: 528px) {
@@ -870,7 +873,7 @@ span {
 }
 
 #tariffs {
-  background: linear-gradient(to left, #000001, #5C0609);
+  background: linear-gradient(to right, #240304, #5C0609);
   position: relative;
   padding: 40px 0;
 }
@@ -925,7 +928,38 @@ span {
   margin-top: 20px;
 }
 
-#popup {
+#contact {
+  background: linear-gradient(to left, #240304, #000001);
+  padding: 14px 0;
+}
+#contact .title-s {
+  color: #ee105a;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+#contact .contact-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#contact .contact-item {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+#contact .contact-item a {
+  color: #f9fbff;
+}
+#contact .contact-item a .fab,
+#contact .contact-item a .fas,
+#contact .contact-item a .far {
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+#popup,
+#lite-popup,
+#pro-popup,
+#elite-popup {
   background: rgba(40, 40, 40, 0.6);
   display: none;
   position: fixed;
@@ -938,7 +972,10 @@ span {
   overflow: auto;
 }
 
-#leed-form {
+#leed-form,
+#leed-form-lite,
+#leed-form-pro,
+#leed-form-elite {
   background: linear-gradient(to right, #889797, #E9F8F8);
   border-radius: 8px;
   max-width: 300px;
@@ -946,12 +983,18 @@ span {
   padding: 40px 0;
   position: relative;
 }
-#leed-form .title-s {
+#leed-form .title-s,
+#leed-form-lite .title-s,
+#leed-form-pro .title-s,
+#leed-form-elite .title-s {
   font-size: 20px;
   margin: 20px;
   padding: 10px 0;
 }
-#leed-form input {
+#leed-form input,
+#leed-form-lite input,
+#leed-form-pro input,
+#leed-form-elite input {
   display: block;
   font-size: 16px;
   margin: 20px auto 0;
@@ -959,17 +1002,38 @@ span {
   outline: none;
   padding: 4px 6px;
 }
-#leed-form .btn-sml {
+#leed-form .btn-sml,
+#leed-form-lite .btn-sml,
+#leed-form-pro .btn-sml,
+#leed-form-elite .btn-sml {
   display: block;
   margin: 20px auto 0;
   padding: 8px 40px;
 }
-#leed-form .form-input {
+#leed-form .form-input,
+#leed-form-lite .form-input,
+#leed-form-pro .form-input,
+#leed-form-elite .form-input {
   background: #f8e7ea;
   border-radius: 8px;
   border: 2px solid rgba(237, 196, 202, 0.1);
 }
-#leed-form #close-popup {
+#leed-form #close-popup,
+#leed-form #close-lite-popup,
+#leed-form #close-pro-popup,
+#leed-form #close-elite-popup,
+#leed-form-lite #close-popup,
+#leed-form-lite #close-lite-popup,
+#leed-form-lite #close-pro-popup,
+#leed-form-lite #close-elite-popup,
+#leed-form-pro #close-popup,
+#leed-form-pro #close-lite-popup,
+#leed-form-pro #close-pro-popup,
+#leed-form-pro #close-elite-popup,
+#leed-form-elite #close-popup,
+#leed-form-elite #close-lite-popup,
+#leed-form-elite #close-pro-popup,
+#leed-form-elite #close-elite-popup {
   border-radius: 50%;
   border: none;
   color: #464646;
@@ -980,12 +1044,42 @@ span {
   top: 2px;
   right: 2px;
 }
-#leed-form #close-popup:hover {
+#leed-form #close-popup:hover,
+#leed-form #close-lite-popup:hover,
+#leed-form #close-pro-popup:hover,
+#leed-form #close-elite-popup:hover,
+#leed-form-lite #close-popup:hover,
+#leed-form-lite #close-lite-popup:hover,
+#leed-form-lite #close-pro-popup:hover,
+#leed-form-lite #close-elite-popup:hover,
+#leed-form-pro #close-popup:hover,
+#leed-form-pro #close-lite-popup:hover,
+#leed-form-pro #close-pro-popup:hover,
+#leed-form-pro #close-elite-popup:hover,
+#leed-form-elite #close-popup:hover,
+#leed-form-elite #close-lite-popup:hover,
+#leed-form-elite #close-pro-popup:hover,
+#leed-form-elite #close-elite-popup:hover {
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
   margin-top: -1px;
   transition: 0.2s all;
 }
-#leed-form #close-popup:active {
+#leed-form #close-popup:active,
+#leed-form #close-lite-popup:active,
+#leed-form #close-pro-popup:active,
+#leed-form #close-elite-popup:active,
+#leed-form-lite #close-popup:active,
+#leed-form-lite #close-lite-popup:active,
+#leed-form-lite #close-pro-popup:active,
+#leed-form-lite #close-elite-popup:active,
+#leed-form-pro #close-popup:active,
+#leed-form-pro #close-lite-popup:active,
+#leed-form-pro #close-pro-popup:active,
+#leed-form-pro #close-elite-popup:active,
+#leed-form-elite #close-popup:active,
+#leed-form-elite #close-lite-popup:active,
+#leed-form-elite #close-pro-popup:active,
+#leed-form-elite #close-elite-popup:active {
   margin-top: 0px;
   transition: 0.2s all;
 }

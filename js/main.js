@@ -78,7 +78,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     },
   })
 
-// popup open/close
+// ----------- popup open/close ---------------
 
 let firstOpenPopUpBtn = document.getElementById('open-first-form'),
     secondOpenPopUpBtn = document.getElementById('open-timer-form'),
@@ -95,4 +95,45 @@ firstOpenPopUpBtn.onclick = function () {
 
 secondOpenPopUpBtn.onclick = function () {
     popUpElement.style.display = "block";
+};
+
+// order LITE popup
+
+let liteOpenPopUpBtn = document.getElementById('lite-order'),
+    closeLitePopUpBtn = document.getElementById('close-lite-popup'),
+    popUpLite = document.getElementById('lite-popup');
+
+closeLitePopUpBtn.onclick = function () {
+    popUpLite.style.display = "none";
+};
+
+liteOpenPopUpBtn.onclick = function () {
+    popUpLite.style.display = "block";
+};
+
+// order pro popup
+
+let proOpenPopUpBtn = document.getElementById('pro-order'),
+    closeProPopUpBtn = document.getElementById('close-pro-popup'),
+    popUpPro = document.getElementById('pro-popup');
+
+closeProPopUpBtn.onclick = function () {
+    popUpPro.style.display = "none";
+};
+
+proOpenPopUpBtn.onclick = function () {
+    popUpPro.style.display = "block";
+};
+// order elite popup
+
+let eliteOpenPopUpBtn = document.getElementById('elite-order'),
+    closeElitePopUpBtn = document.getElementById('close-elite-popup'),
+    popUpElite = document.getElementById('elite-popup');
+
+closeElitePopUpBtn.onclick = function () {
+    popUpElite.style.display = "none";
+};
+
+eliteOpenPopUpBtn.onclick = function () {
+    popUpElite.style.display = "block";
 };
