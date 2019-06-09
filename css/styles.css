@@ -944,7 +944,7 @@ span {
 }
 #contact .contact-item {
   font-size: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 0 4px 18px;
 }
 #contact .contact-item a {
   color: #f9fbff;
