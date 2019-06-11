@@ -6,7 +6,7 @@ let d = document.getElementById('d'),
     m = document.getElementById('m'),
     s = document.getElementById('s');
 
-let countDownDate = new Date("jul 30, 2019 23:14:55").getTime();
+let countDownDate = new Date("jun 19, 2019 23:14:55").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function() {
