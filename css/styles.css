@@ -934,7 +934,7 @@ span {
 
 #contact {
   background: linear-gradient(to left, #240304, #000001);
-  padding: 14px 0;
+  padding: 14px 0 0;
 }
 #contact .title-s {
   color: #ee105a;
@@ -957,6 +957,25 @@ span {
 #contact .contact-item a .fas,
 #contact .contact-item a .far {
   font-size: 20px;
+  margin-right: 4px;
+}
+
+#dev-info {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 14px;
+}
+#dev-info .contact-item {
+  font-size: 12px;
+  margin: 10px 6px;
+}
+#dev-info .contact-item a {
+  color: #f9fbff;
+}
+#dev-info .contact-item a .fab,
+#dev-info .contact-item a .fas,
+#dev-info .contact-item a .far {
+  font-size: 16px;
   margin-right: 4px;
 }
 
